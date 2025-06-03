@@ -99,8 +99,6 @@ calculateBMI(85, 1.8);
 
 // Challenge 8 for greeting based on time
 
-
-
 function greetUser(name: string, hour: number): string {
 
   let greeting: string;
@@ -123,6 +121,7 @@ greetUser("Charlie", 20);
 greetUser("David", 23);
 
 // Challenge 9 for the FizzBuzz checker
+
 function fizzBuzzCheck(number: number): string {
   let result: string;
   
@@ -145,6 +144,7 @@ fizzBuzzCheck(15);
 fizzBuzzCheck(7);
 
 // Challenge 10 on the perimeter calculator for square and circle
+
 function perimeter(shape: string, num: number): number {
   let result: number;
   if (shape === "s") {
@@ -198,7 +198,6 @@ powerUp(3, 4);
 
 // Challenge 13 for creating factorial calculator
 
-
 function factorial(n: number): number {
   let factorialNumber: number = 1;
   for (let i: number = 1; i <= n; i++) {
@@ -215,7 +214,6 @@ factorial(6);
 
 // Challenge 14 on the sum of multiples
 
-
 function sumMultiples(n: number, divisor: number): number {
   let sumMultiplesNumber: number = 0;
   for (let i: number = 1; i <= n; i++) {
@@ -223,9 +221,7 @@ function sumMultiples(n: number, divisor: number): number {
       sumMultiplesNumber += i;
     }
   }
-//   console.log(
-//     `Sum of numbers divisible by ${divisor} from 1 to ${n} is ${sumMultiplesNumber}`
-//   );
+//   console.log(`Sum of numbers divisible by ${divisor} from 1 to ${n} is ${sumMultiplesNumber}`);
   return sumMultiplesNumber;
 }
 
