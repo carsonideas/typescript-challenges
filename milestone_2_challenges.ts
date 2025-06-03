@@ -6,7 +6,7 @@ function sumOfPositives(numbers: number[]): number {
       sum += numbers[i];
     }
   }
-  console.log(`The sum of positive numbers in [${numbers}] is ${sum}`);
+  //console.log(`The sum of positive numbers in [${numbers}] is ${sum}`);
   return sum;
 }
 
@@ -22,7 +22,7 @@ function findMax(numbers: number[]): number {
       maximum = numbers[i];
     }
   }
-  console.log(`The maximum value in [${numbers}] is ${maximum}`);
+  //console.log(`The maximum value in [${numbers}] is ${maximum}`);
   return maximum;
 }
 
@@ -43,7 +43,7 @@ function findWinner(candidates: Candidate[]): Candidate {
       winner = candidates[i];
     }
   }
-  console.log(`The winner is ${winner.name} with ${winner.votes} votes`);
+  //console.log(`The winner is ${winner.name} with ${winner.votes} votes`);
   return winner;
 }
 
@@ -65,7 +65,7 @@ function findLongestWord(words: string[]): string {
       longestWord = words[i];
     }
   }
-  console.log(`The longest word in [${words}] is "${longestWord}"`);
+  //console.log(`The longest word in [${words}] is "${longestWord}"`);
   return longestWord;
 }
 
@@ -78,7 +78,7 @@ function countProperties(obj: Record<string, any>): number {
   for (let key in obj) {
     count++;
   }
-  console.log(`The object has ${count} properties`);
+  //console.log(`The object has ${count} properties`);
   return count;
 }
 
@@ -92,7 +92,7 @@ function filterByLength(strings: string[], minLength: number): string[] {
       filteredArray.push(strings[i]);
     }
   }
-  console.log(`Words with length >= ${minLength} from [${strings}] are: [${filteredArray}]`);
+  //console.log(`Words with length >= ${minLength} from [${strings}] are: [${filteredArray}]`);
   return filteredArray;
 }
 
@@ -111,7 +111,7 @@ function sumEvenNumbers(numbers: number[]): number {
       evenNumbers.push(numbers[i]);
     }
   }
-  console.log(`The sum of even numbers [${evenNumbers}] from [${numbers}] is ${sum}`);
+  //console.log(`The sum of even numbers [${evenNumbers}] from [${numbers}] is ${sum}`);
   return sum;
 }
 
@@ -140,7 +140,7 @@ function differenceEvenOdd(numbers: number[]): number {
   }
   
   const difference: number = evenSum - oddSum;
-  console.log(`Even numbers [${evenNumbers}] sum: ${evenSum}, Odd numbers [${oddNumbers}] sum: ${oddSum}, Difference: ${difference}`);
+  //console.log(`Even numbers [${evenNumbers}] sum: ${evenSum}, Odd numbers [${oddNumbers}] sum: ${oddSum}, Difference: ${difference}`);
   return difference;
 }
 
@@ -163,7 +163,7 @@ function countTruthy(obj: Record<string, any>): number {
     }
   }
   
-  console.log(`The object has ${count} truthy values: [${truthyValues}]`);
+  //console.log(`The object has ${count} truthy values: [${truthyValues}]`);
   return count;
 }
 
@@ -184,7 +184,7 @@ function average(numbers: number[]): number {
       sum += numbers[i];
     }
     const avg: number = sum / numbers.length;
-    console.log(`The average of [${numbers}] is ${avg}`);
+    //console.log(`The average of [${numbers}] is ${avg}`);
     return avg;
   }
 }
@@ -206,7 +206,7 @@ function linearSearch(array: number[], value: number): number {
       return i;
     }
   }
-  console.log(`Value ${value} not found in [${array}], returning -1`);
+  //console.log(`Value ${value} not found in [${array}], returning -1`);
   return -1;
 }
 
@@ -227,9 +227,9 @@ function reverseLinearSearch(array: number[], value: number): number {
   }
   
   if (lastIndex !== -1) {
-    console.log(`Last occurrence of ${value} in [${array}] is at index ${lastIndex}`);
+    //console.log(`Last occurrence of ${value} in [${array}] is at index ${lastIndex}`);
   } else {
-    console.log(`Value ${value} not found in [${array}], returning -1`);
+    //console.log(`Value ${value} not found in [${array}], returning -1`);
   }
   return lastIndex;
 }
@@ -251,7 +251,7 @@ function linearSearchAll(array: number[], value: number): number[] {
       indices.push(i);
     }
   }
-  console.log(`All indices of ${value} in [${array}] are: [${indices}]`);
+  //console.log(`All indices of ${value} in [${array}] are: [${indices}]`);
   return indices;
 }
 
@@ -263,8 +263,8 @@ linearSearchAll([5, 3, 7, 1, 4], 10);
 // Challenge 14 on counting occurrences
 
 
-function countOccurrences(strings: string[]): Record<string, number> {
-  let counts: Record<string, number> = {};
+function countOccurrences(strings: string[]) {
+  let counts: string = {};
   
   for (let i: number = 0; i < strings.length; i++) {
     const word: string = strings[i];
@@ -275,7 +275,8 @@ function countOccurrences(strings: string[]): Record<string, number> {
     }
   }
   
-  console.log(`Occurrences in [${strings}]:`, counts);
+  //console.log(`Occurrences in [${strings}]:`, counts);
+
   return counts;
 }
 
@@ -299,7 +300,7 @@ function removeDuplicates<T>(array: T[]): T[] {
     }
   }
   
-  console.log(`Original array: [${array}], After removing duplicates: [${uniqueArray}]`);
+  //console.log(`Original array: [${array}], After removing duplicates: [${uniqueArray}]`);
   return uniqueArray;
 }
 

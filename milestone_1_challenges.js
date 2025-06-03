@@ -1,35 +1,48 @@
 // Challenge 1 on returning the sum of two numbers
 function addition(num1, num2) {
     var result = num1 + num2;
-    console.log("The sum of ".concat(num1, " and ").concat(num2, " is ").concat(result));
+    //console.log(`The sum of ${num1} and ${num2} is ${result}`);
     return result;
 }
 addition(3, 5);
 addition(-6, 9);
+
+
 // Challenge 2 on convert minutes into seconds
+
+
 function convert(minutes) {
     var seconds = minutes * 60;
-    console.log("".concat(minutes, " minutes equals ").concat(seconds, " seconds"));
+    //console.log(`${minutes} minutes equals ${seconds} seconds`);
     return seconds;
 }
 convert(5);
 convert(2);
+
+
 // Challenge 3 on calculating the perimeter of a rectangle
 function findPerimeter(length, width) {
     var perimeter = 2 * (length + width);
-    console.log("The perimeter of a rectangle with length ".concat(length, " and width ").concat(width, " is ").concat(perimeter));
+    //console.log(
+    "The perimeter of a rectangle with length ".concat(length, " and width ").concat(width, " is ").concat(perimeter);
+    ;
     return perimeter;
 }
 findPerimeter(6, 7);
 findPerimeter(20, 10);
+
+
 // Challenge 4 on checking if a number is negative and returning boolean
+
 function checkNegative(num) {
     var isNegative = num < 0;
-    console.log("Is ".concat(num, " a negative number? ").concat(isNegative));
+    //console.log(`Is ${num} a negative number? ${isNegative}`);
     return isNegative;
 }
 checkNegative(-23);
 checkNegative(55);
+
+
 // Challenge 5 for the can I Drive function
 function canDrive(name, age) {
     if (age >= 18) {
@@ -39,15 +52,15 @@ function canDrive(name, age) {
         return "".concat(name, " is not old enough to drive yet");
     }
 }
-console.log(canDrive("Jane", 22));
-console.log(canDrive("June", 12));
+//console.log(canDrive("Jane", 22));
+//console.log(canDrive("June", 12));
 // Challenge 6 for finding the largest number
 function findLargest(num1, num2, num3) {
     return Math.max(num1, num2, num3);
 }
-console.log(findLargest(5, 9, 3));
-console.log(findLargest(10, 10, 10));
-console.log(findLargest(-1, -5, -3));
+// console.log(findLargest(5, 9, 3));
+// console.log(findLargest(10, 10, 10));
+// console.log(findLargest(-1, -5, -3));
 // Challenge 7 for the BMI Calculator
 function calculateBMI(weight, height) {
     var bmi = weight / (height * height);
@@ -65,7 +78,7 @@ function calculateBMI(weight, height) {
         category = "Obese";
     }
     var result = "Your BMI is ".concat(bmi.toFixed(2), " - ").concat(category);
-    console.log(result);
+    //   console.log(result);
     return result;
 }
 calculateBMI(68, 1.75);
@@ -85,7 +98,7 @@ function greetUser(name, hour) {
     else {
         greeting = "Good night, ".concat(name, "!");
     }
-    console.log(greeting);
+    //   console.log(greeting);
     return greeting;
 }
 greetUser("Alice", 9);
@@ -107,7 +120,7 @@ function fizzBuzzCheck(number) {
     else {
         result = number.toString();
     }
-    console.log("For ".concat(number, ", the result is: ").concat(result));
+    //   console.log(`For ${number}, the result is: ${result}`);
     return result;
 }
 fizzBuzzCheck(3);
@@ -119,11 +132,11 @@ function perimeter(shape, num) {
     var result;
     if (shape === "s") {
         result = 4 * num;
-        console.log("Perimeter of a square with side ".concat(num, " is ").concat(result));
+        // console.log(`Perimeter of a square with side ${num} is ${result}`);
     }
     else if (shape === "c") {
         result = 2 * Math.PI * num; // Fixed: using 2πr instead of 6.28
-        console.log("Perimeter of a circle with radius ".concat(num, " is ").concat(result.toFixed(2)));
+        // console.log(`Perimeter of a circle with radius ${num} is ${result.toFixed(2)}`);
     }
     else {
         result = 0;
@@ -140,7 +153,7 @@ function sumEvenNumbers(n) {
             sumEven += i;
         }
     }
-    console.log("Sum of even numbers from 0 to ".concat(n, " is ").concat(sumEven));
+    //   console.log(`Sum of even numbers from 0 to ${n} is ${sumEven}`);
     return sumEven;
 }
 sumEvenNumbers(6);
@@ -149,7 +162,7 @@ sumEvenNumbers(5);
 // Challenge 12 in the Power function.. use the logic
 function powerUp(num, times) {
     var result = Math.pow(num, times);
-    console.log(result);
+    //   console.log(result);
     return result;
 }
 powerUp(2, 3);
@@ -161,7 +174,7 @@ function factorial(n) {
     for (var i = 1; i <= n; i++) {
         factorialNumber *= i;
     }
-    console.log(factorialNumber);
+    //   console.log(factorialNumber);
     return factorialNumber;
 }
 factorial(4);
@@ -175,7 +188,9 @@ function sumMultiples(n, divisor) {
             sumMultiplesNumber += i;
         }
     }
-    console.log("Sum of numbers divisible by ".concat(divisor, " from 1 to ").concat(n, " is ").concat(sumMultiplesNumber));
+    //   console.log(
+    //     `Sum of numbers divisible by ${divisor} from 1 to ${n} is ${sumMultiplesNumber}`
+    //   );
     return sumMultiplesNumber;
 }
 sumMultiples(10, 2);
