@@ -73,7 +73,7 @@ findLongestWord(["apple", "banana", "pear", "grapefruit"]);
 
 // Challenge 5 on dealing with the count properties
 
-function countProperties(obj: Record<string, any>): number {
+function countProperties(key: string): number {
   let count: number = 0;
   for (let key in obj) {
     count++;
@@ -85,6 +85,7 @@ function countProperties(obj: Record<string, any>): number {
 countProperties({ name: "Alice", age: 25, city: "Paris" });
 
 // Challenge 6 for filtering by length
+
 function filterByLength(strings: string[], minLength: number): string[] {
   let filteredArray: string[] = [];
   for (let i: number = 0; i < strings.length; i++) {
@@ -100,8 +101,6 @@ filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5);
 
 
 // Challenge 7 on finding the sum of even numbers
-
-
 function sumEvenNumbers(numbers: number[]): number {
   let sum: number = 0;
   let evenNumbers: number[] = [];
@@ -121,7 +120,6 @@ sumEvenNumbers([1, 2, 3, 4, 5, 6]);
 
 
 // Challenge 8 on finding the difference between sum of even and odd numbers
-
 
 function differenceEvenOdd(numbers: number[]): number {
   let evenSum: number = 0;
@@ -149,10 +147,7 @@ differenceEvenOdd([1, 2, 3, 4, 5, 6]);
 
 
 // Challenge 9 on counting truth values
-
-
-
-function countTruthy(obj: Record<string, any>): number {
+function countTruthy(obj: Key): number {
   let count: number = 0;
   let truthyValues: string[] = [];
   
@@ -171,8 +166,6 @@ countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null });
 
 
 // Challenge 10 on finding the average of numbers
-
-
 
 function average(numbers: number[]): number {
   if (numbers.length === 0) {
@@ -196,9 +189,6 @@ average([]);
 
 // Challenge 11 in linear searching
 
-
-
-
 function linearSearch(array: number[], value: number): number {
   for (let i: number = 0; i < array.length; i++) {
     if (array[i] === value) {
@@ -215,8 +205,6 @@ linearSearch([5, 3, 7, 1, 4], 10);
 
 
 // Challenge 12 on finding reverse linear search
-
-
 
 function reverseLinearSearch(array: number[], value: number): number {
   let lastIndex: number = -1;
@@ -241,9 +229,6 @@ reverseLinearSearch([5, 3, 7, 1, 4], 10);
 
 // Challenge 13 on linear search of all indices
 
-
-
-
 function linearSearchAll(array: number[], value: number): number[] {
   let indices: number[] = [];
   for (let i: number = 0; i < array.length; i++) {
@@ -261,7 +246,6 @@ linearSearchAll([5, 3, 7, 1, 4], 10);
 
 
 // Challenge 14 on counting occurrences
-
 
 function countOccurrences(strings: string[]) {
   let counts: string = {};
@@ -308,9 +292,8 @@ removeDuplicates([1, 2, 3, 2, 4, 1, 5]);
 
 // Challenge 16 on finding the most frequent value
 
-
 function mostFrequent<T>(array: T[]): T {
-  let counts: Record<string, number> = {};
+  let counts: key = {};
   let maxCount: number = 0;
   let mostFrequentValue: T = array[0];
   
